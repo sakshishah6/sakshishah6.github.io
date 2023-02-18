@@ -2,3 +2,14 @@ title: Sakshi's homepage
 theme: jekyll-theme-minimal
 description: This is my personal portfolio.
 email: shahsakshi@hotmail.com
+
+lsi: false
+safe: true
+source: root
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
