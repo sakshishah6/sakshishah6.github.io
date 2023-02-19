@@ -25,7 +25,7 @@
 body { margin: 0; padding: 0; background: #151515 url("../images/bkg.png") 0 0; color: #eaeaea; font-size: 16px; line-height: 1.5; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; }
 
 /* General & 'Reset' Stuff */
-.container { width: 90%; max-width: 1000px; margin: 0 auto; }
+.container { width: 90%; max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between;}
 
 section { display: block; margin: 0 0 20px 0; }
 
@@ -90,13 +90,14 @@ hr { height: 0; border: 0; border-bottom: 1px dashed #b5e853; color: #b5e853; }
 
 .btn:hover { background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8)); }
 
-.btn .icon { display: inline-block; width: 16px; height: 16px; margin: 1px 8px 0 0; float: left; }
+.btn .icon { display: block; width: 16px; height: 16px; margin: 1px 8px 0 0; float: left; }
 
 .btn-github .icon { opacity: 0.6; background: url("../images/blacktocat.png") 0 0 no-repeat; }
 
 /* Links a, a:hover, a:visited
 */
-a { color: #63c0f5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
+a { color: #b5e853; text-shadow: 0 0 5px #cde89b; }
+a:hover { color: #63c0f5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
 
 /* Clearfix */
 .cf:before, .cf:after { content: ""; display: table; }
