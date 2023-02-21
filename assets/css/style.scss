@@ -85,7 +85,7 @@ li {
 }
 
 .card-container {
-    background: #fff;
+    background: white;
     width: 260px;
     margin: 20px;
     padding: 30px;
@@ -93,7 +93,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0.15rem 0.6rem rgb(43 52 56 / 15%);
+    box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 15);
     border-radius: 3px;
 }
 

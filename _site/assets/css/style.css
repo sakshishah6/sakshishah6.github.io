@@ -135,6 +135,8 @@ li { display: grid; margin: 1rem; justify-items: center; text-align: center; pad
 
 #contact-body { display: flex; justify-content: space-around; margin: 1rem; flex-wrap: wrap; }
 
+.card-container { background: white; width: 260px; margin: 20px; padding: 30px; display: flex; justify-content: center; align-items: center; flex-direction: column; box-shadow: 0 0.15rem 0.6rem #2b3438; border-radius: 3px; }
+
 hr { background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0)); }
 
 #section-divider { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0)); margin-top: 4rem; margin-bottom: 4rem; }
