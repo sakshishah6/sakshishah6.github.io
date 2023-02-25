@@ -3,8 +3,8 @@
 
 @import "{{ site.theme }}";
 
-body {
-    margin:1rem;
+header {
+    background: rgb(0 0 0 / 18%);
 }
 
 .header {
@@ -19,7 +19,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,10 @@ body {
 }
 
 
+header h1 {
+    text-shadow: 0 0 15px #bae89b;
+}
+
 a {
     color: #b5e853;
     text-shadow: 0 0 5px #cde89b;
@@ -41,18 +45,16 @@ a:hover {
     text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 
-
-img {
-    padding-right:1rem;
+.heading-icons {
+    padding-right:10px;
+    height:30px;
+    width:30px;
 }
 
-#projects-heading {
+#skills-heading, #projects-heading, #contact-heading {
     display: inline-block;    
     color: #ac4142;
     text-shadow: 0 0 3px #b45b5e;
-}
-
-#skills-heading {
     display: flex;
 }
 
@@ -65,8 +67,8 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1rem;
     position: relative;
+    padding-left: 0px;
 }
 
 li {
@@ -75,26 +77,6 @@ li {
     justify-items: center;
     text-align: center;
     padding: 10px;
-}
-
-#contact-body {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
-    flex-wrap: wrap;
-}
-
-.card-container {
-    background: white;
-    width: 260px;
-    margin: 20px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 15);
-    border-radius: 3px;
 }
 
 hr {
@@ -107,4 +89,65 @@ hr {
     background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0));
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+#contact-body {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+    padding:1.5rem;
+}
+
+.contact-icons {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.h3-padless {
+    margin-bottom: 0px;
+    color:#b45b5e;
+    text-shadow: 0 1px 2px #b45b5eaa;
+}
+
+.flip-card {
+    border-radius: 3px;
+    width: 230px;
+    height: 70px;
+    margin: 1rem;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+    perspective: 600px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-container-front, .card-container-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+    top: 0px;
+    left:0px;
+    position: absolute;
+    border-radius: 3px;
+    width:100%;
+    height:100%;
+}
+
+.card-container-front {
+    transform: rotateY(0deg);
+}
+
+.card-container-back {
+    transform: rotateY(180deg);
 }
