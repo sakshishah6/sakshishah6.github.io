@@ -107,6 +107,8 @@ a { color: #63c0f5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
 
 #a-title { text-decoration: none; }
 
+header { background: rgba(0, 0, 0, 0.18); }
+
 .header { margin-block: auto; margin-top: 1rem; margin-bottom: 1rem; }
 
 #description { margin: 0; }
@@ -133,15 +135,31 @@ li { display: grid; margin: 1rem; justify-items: center; text-align: center; pad
 
 hr { background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0)); }
 
+#projects-body { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 2rem; }
+
+.collapsible { background-color: #6060607d; color: white; padding: 1.5rem; width: 90%; margin: auto; border: none; text-align: left; box-shadow: rgba(0, 0, 0, 0.6) 0px -5px 25px; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; font-size: medium; }
+
+.active, .collapsible:hover { background-color: #555; }
+
+.collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
+
+.active:after { content: "\2212"; }
+
+.project { display: flex; width: 90%; box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 25px; margin: auto; max-height: 0; margin-bottom: 2rem; overflow: hidden; transition: max-height 0.2s ease-out; font-size: small; }
+
+.project-display { width: 40%; background-color: transparent; padding: 1rem; }
+
+.project-description { width: 60%; padding: 1rem; display: inline-block; height: 100%; }
+
 #section-divider { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0)); margin-top: 4rem; margin-bottom: 4rem; }
 
 #contact-body { display: flex; background-color: transparent; justify-content: space-around; flex-wrap: wrap; margin-bottom: 10rem; padding: 1.5rem; }
 
-.contact-icons { width: 50px; height: 50px; padding: 5px; }
+.contact-icons { width: 50px; height: 50px; padding: 5px; filter: invert(100%); }
 
 .h3-padless { margin-bottom: 0px; color: #b45b5e; text-shadow: 0 1px 2px #b45b5eaa; }
 
-.flip-card { border-radius: 3px; width: 230px; height: 70px; margin: 1rem; padding: 30px; background: rgba(255, 255, 255, 0.68); box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px; perspective: 600px; transition: transform 1s; transform-style: preserve-3d; position: relative; }
+.flip-card { border-radius: 3px; width: 230px; height: 70px; margin: 1rem; padding: 30px; background: #6060607d; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px; perspective: 3600px; transition: transform 1s; transform-style: preserve-3d; position: relative; }
 
 .flip-card:hover { transform: rotateY(180deg); }
 

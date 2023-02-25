@@ -228,6 +228,66 @@ layout: default
             <img src="/assets/icons/project-icon.png" class="heading-icons">
             <h2 class="projects">Projects</h2>
         </div>
+
+        <div id="projects-body">
+            <button type="button" class="collapsible">Employee Hours Logging System</button>
+            <div class="project">
+                <div class="project-display">
+                    Display
+                </div>
+                <div class="project-description">
+                    <p>An application where employees and their managers can keep track of the amount of hours worked.</p>
+                    <p>Javascript, React.js, Node.js, Bootstrap, MySQL</p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">Automated Poker Game</button>
+            <div class="project">
+                <div class="project-display">
+                </div>
+                <div class="project-description">
+                    <p>An automated game of Poker that will return the winning hand 100% of the time.</p>
+                    <p>Elixir</p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">Retail Database Management System</button>
+            <div class="project">
+                <div class="project-display">
+                </div>
+                <div class="project-description">
+                    <p>An retail database system that stores all the info related to a retail business.</p>
+                    <p>Java, Oracle SQL Database</p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">Utility App</button>
+            <div class="project">
+                <div class="project-display">
+                </div>
+                <div class="project-description">
+                    <p>A utility app that serves as a calendar, schedule builder, and timer/stopwatch system.</p>
+                    <p>Java, Swing GUI</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
     </div>
 
     <hr id="section-divider">
