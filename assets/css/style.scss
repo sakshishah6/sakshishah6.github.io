@@ -88,7 +88,7 @@ li {
 }
 
 hr {
-    background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0));
+    background-image: linear-gradient(to right, rgba(55, 55, 55, 0), #32aea77d, rgba(55, 55, 55, 0));
 }
 
 #projects-body {
@@ -101,6 +101,7 @@ hr {
 
 .collapsible {
     background-color: #4848487d;
+    //background-color: #3c716e7d;
     color: white;
     padding: 1.5rem;
     width:90%;
@@ -112,8 +113,12 @@ hr {
     font-size: medium;
 }
   
-.active, .collapsible:hover {
-    background-color: #5e5e5ea2;
+.active {
+    background: #457b787d;
+}
+
+.collapsible:hover {
+    background: #3c716e7d;
 }
   
 .collapsible:after {
@@ -139,6 +144,7 @@ hr {
     transition: max-height 0.2s ease-out;
     font-size: 1em;
     background-color: #14141488;
+    //background-color: #051b1539;
 }
 
 .project-display {
@@ -158,7 +164,7 @@ hr {
 #section-divider {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0));
+    background-image: linear-gradient(to right, rgba(55, 55, 55, 0), #5eaeaa7d, rgba(55, 55, 55, 0));
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
@@ -221,10 +227,12 @@ hr {
 
 .card-container-front {
     transform: rotateY(0deg);
+    background: #5e72717d;
 }
 
 .card-container-back {
     transform: rotateY(180deg);
+    background: #3c716e7d;
 }
 
 section {
