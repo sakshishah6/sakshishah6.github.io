@@ -5,6 +5,12 @@
 
 header {
     background: rgba(0, 0, 0, 0.18);
+    border-bottom: 1px dashed #20c997;
+}
+
+header h1 {
+    color: #20c997;
+    text-shadow: 0 0 15px #4dc9a492;
 }
 
 .header {
@@ -13,14 +19,17 @@ header {
     margin-bottom: 1rem;
 }
 
+header, h1, h1:before, h2, h3, h4, h5, h6 {
+    color: #20c997;
+    text-shadow: 0 0 5px #4dc9a492;
+}
+
 #description {
     margin: 0;
 }
 
 .container {
-    width: 90%;
     max-width: 80%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -30,14 +39,9 @@ header {
     font-size: large;
 }
 
-
-header h1 {
-    text-shadow: 0 0 15px #bae89b;
-}
-
 a {
-    color: #b5e853;
-    text-shadow: 0 0 5px #cde89b;
+    color: #20c997;
+    text-shadow: 0 0 5px #4dc9a492;
 }
 
 a:hover {
@@ -79,6 +83,10 @@ li {
     padding: 10px;
 }
 
+.text-center {
+    padding:10px;
+}
+
 hr {
     background-image: linear-gradient(to right, rgba(55, 55, 55, 0), rgba(182, 182, 182, 0.75), rgba(55, 55, 55, 0));
 }
@@ -92,7 +100,7 @@ hr {
 }
 
 .collapsible {
-    background-color: #6060607d;
+    background-color: #4848487d;
     color: white;
     padding: 1.5rem;
     width:90%;
@@ -105,7 +113,7 @@ hr {
 }
   
 .active, .collapsible:hover {
-    background-color: #555;
+    background-color: #5e5e5ea2;
 }
   
 .collapsible:after {
@@ -129,17 +137,19 @@ hr {
     margin-bottom: 2rem;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: small;
+    font-size: 1em;
+    background-color: #14141488;
 }
 
 .project-display {
-    width: 40%;
-    background-color: transparent;
+    width: 30%;
     padding:1rem;
+    display: inline-block;
+    height:100%;
 }
 
 .project-description {
-    width: 60%;
+    width: 70%;
     padding:1rem; 
     display: inline-block;
     height:100%;
@@ -171,8 +181,10 @@ hr {
 
 .h3-padless {
     margin-bottom: 0px;
-    color:#b45b5e;
-    text-shadow: 0 1px 2px #b45b5eaa;
+    color:white;
+    //text-shadow: #bae89b;
+    //color:#b45b5e;
+    //text-shadow: 0 1px 2px #b45b5eaa;
 }
 
 .flip-card {
@@ -181,7 +193,7 @@ hr {
     height: 70px;
     margin: 1rem;
     padding: 30px;
-    background: #6060607d;
+    background: #3c716e7d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
     perspective: 3600px;
     transition: transform 1s;
@@ -213,4 +225,21 @@ hr {
 
 .card-container-back {
     transform: rotateY(180deg);
+}
+
+section {
+    margin: 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.18);
+    padding-top:2rem;
+    border-top: 1px dashed #20c997;
+}
+
+.footer-container {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
