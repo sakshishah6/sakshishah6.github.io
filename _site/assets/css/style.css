@@ -158,7 +158,6 @@ li {
 header {
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-bottom: 1px dashed #b5e853;
     padding: 20px 0;
     margin: 0 0 40px 0;
 }
@@ -371,14 +370,22 @@ a {
     text-decoration: none;
 }
 
-header {
+header, footer {
     background: rgba(0, 0, 0, 0.18);
-    border-bottom: 1px dashed #20c997;
+    border-bottom: 1px dashed;
+    border-image: linear-gradient(0.25turn, rgba(55, 55, 55, 0), #20c9b8, #7c1eaffc, #20c9b8, rgba(55, 55, 55, 0));
+    border-image-slice: 1;
+    width:100%;
 }
 
 header h1 {
-    color: #20c997;
-    text-shadow: 0 0 15px #4dc9a492;
+    color: #7c1eaffc;
+    text-shadow: 0 0 10px #b284d87d;
+}
+
+h1:before {
+    color: #7c1eaffc;
+    text-shadow: 0 0 10px #b284d87d;
 }
 
 .header {
@@ -387,16 +394,19 @@ header h1 {
     margin-bottom: 1rem;
 }
 
-header,
 h1,
-h1:before,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #20c997;
-    text-shadow: 0 0 5px #4dc9a492;
+    color: #20c9b8;
+    text-shadow: 0 0 5px #4dc9bd92;
+}
+
+#text {
+    color: #20c9b8;
+    text-shadow: 0 0 5px #4dc9bd92;
 }
 
 #description {
@@ -412,11 +422,13 @@ h6 {
 .nav {
     margin-block: auto;
     font-size: large;
+    color: #20c9b8;
+    text-shadow: 0 0 5px #4dc9bd92;
 }
 
 a {
-    color: #20c997;
-    text-shadow: 0 0 5px #4dc9a492;
+    color: #20c9b8;
+    text-shadow: 0 0 10px #b284d87d;
 }
 
 a:hover {
@@ -491,11 +503,11 @@ hr {
 }
 
 .active {
-    background: #457b787d;
+    background: #5d308267;
 }
 
 .collapsible:hover {
-    background: #3c716e7d;
+    background: #3c687186;
     cursor: url("/assets/icons/c2.png"), auto;
 }
 
@@ -573,7 +585,7 @@ hr {
     height: 70px;
     margin: 1rem;
     padding: 30px;
-    background: #3c716e7d;
+    background: #3c71717d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
     perspective: 3600px;
     transition: transform 1s;
@@ -602,12 +614,12 @@ hr {
 
 .card-container-front {
     transform: rotateY(0deg);
-    background: #4a7e6d7d;
+    background: #4a777e7d;
 }
 
 .card-container-back {
     transform: rotateY(180deg);
-    background: #3082657d;
+    background: #5d30827d;
 }
 
 section {
@@ -625,6 +637,11 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: auto;
+}
+
+.footer-container h3 {
+    color: #7c1eaffc;
+    text-shadow: 0 0 5px #b284d87d;
 }
 
 .icons {
