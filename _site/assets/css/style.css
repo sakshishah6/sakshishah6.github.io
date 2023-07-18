@@ -410,6 +410,14 @@ h6 {
     font-weight: bolder;
 }
 
+h1 {
+    background: linear-gradient(45deg, #cc00fffc, #00ffe5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
 nav {
     background: linear-gradient(255deg, #b712e0fc, #0eebd5);
     background-clip: text;
@@ -541,26 +549,109 @@ hr {
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 25px;
     margin: auto;
-    max-height: 0;
     margin-bottom: 2rem;
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
     font-size: 1em;
     background-color: #14141488;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .project-display {
-    width: 30%;
-    padding: 1rem;
-    display: inline-block;
+    width: 50%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.containers1, .containers2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.back, .forward {
+    cursor: pointer;
+    position: absolute;
+    padding: 2px;
+    line-height: normal;
+    margin: 0;
+    top: 35%;
+    width: auto;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 5px;
+    user-select: none;
+    background: none;
+}
+
+.forward {
+    right: 0;
+}
+
+.back:hover, .forward:hover {
+    color: white;
+}
+
+.info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-info {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+
+.dots1, .dots2 {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    background-color: #717161;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+    padding:0;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+
+.enable, .dots1:hover, .dots2:hover {
+    background-color: #acc;
+}
+
 .project-description {
-    width: 70%;
-    padding: 1rem;
+    width: 50%;
+    padding: 1.5rem;
     display: inline-block;
     height: 100%;
+    scroll-behavior: auto;
+}
+
+.project-description p {
+    padding: 0;
+    margin: 0;
+}
+
+.tools {
+    color: #8415a09e;
+    text-shadow: 0 0 #d0d0d0;
 }
 
 #section-divider {
