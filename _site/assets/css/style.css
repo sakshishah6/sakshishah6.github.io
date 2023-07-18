@@ -742,9 +742,9 @@ footer {
 }
 
 #topBtn:hover {
-    box-shadow: 0 0 10px #ffffffa2;
     border-radius: 50%;
     cursor: url("/assets/icons/c2.png"), auto;
+    opacity: 100%;
 }
 
 #top-btn-div {
