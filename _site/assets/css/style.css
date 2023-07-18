@@ -119,7 +119,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #151515 url("../images/bkg.png") 0 0;
+    background: url("/assets/bg.jpg") 0 0;
+    background-color: rgba(0, 0, 0, 0.549);
     color: #eaeaea;
     font-size: 16px;
     line-height: 1.5;
@@ -665,4 +666,48 @@ footer {
     --cursor-outline-shade: 0.3;
     --cursor-size: 10px;
     --cursor-outline-size: 12px;
+}
+
+.pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,.1);
+    pointer-events: none;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.pointer1 {
+    transition: 0.05s;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,.1);
+}
+.pointer2 {
+    transition: 0.1s;
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,.08);
+}
+.pointer3 {
+    transition: 0.15s;
+    width: 6px;
+    height: 6px;
+    background: rgba(255,255,255,.06);
+}
+.pointer4 {
+    transition: 0.2s;
+    width: 4px;
+    height: 4px;
+    background: rgba(255,255,255,.04);
+}
+.pointer5 {
+    transition: 0.25s;
+    width: 2px;
+    height: 2px;
+    background: rgba(255,255,255,.2);
 }
