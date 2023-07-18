@@ -400,13 +400,19 @@ h3,
 h4,
 h5,
 h6 {
-    color: #20c9b8;
-    text-shadow: 0 0 5px #4dc9bd92;
+    background: linear-gradient(45deg, #b712e0fc, #0eebd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
 }
 
-#text {
-    color: #20c9b8;
-    text-shadow: 0 0 5px #4dc9bd92;
+nav {
+    background: linear-gradient(255deg, #b712e0fc, #0eebd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
 }
 
 #description {
@@ -503,11 +509,11 @@ hr {
 }
 
 .active {
-    background: #5d308267;
+    background: linear-gradient(45deg, #b712e0be, #0eebd5ba);
 }
 
 .collapsible:hover {
-    background: #3c687186;
+    background: linear-gradient(45deg, #b712e046, #0eebd549);
     cursor: url("/assets/icons/c2.png"), auto;
 }
 
@@ -577,6 +583,10 @@ hr {
 .h3-padless {
     margin-bottom: 0px;
     color: white;
+    background: none;
+    background-clip: none;
+    -webkit-text-fill-color: white;
+    font-weight: 100;
 }
 
 .flip-card {
@@ -585,7 +595,6 @@ hr {
     height: 70px;
     margin: 1rem;
     padding: 30px;
-    background: #3c71717d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
     perspective: 3600px;
     transition: transform 1s;
@@ -614,12 +623,12 @@ hr {
 
 .card-container-front {
     transform: rotateY(0deg);
-    background: #4a777e7d;
+    background: linear-gradient(#b712e03e, #0eebd544);
 }
 
 .card-container-back {
     transform: rotateY(180deg);
-    background: #5d30827d;
+    background: linear-gradient(#0eebd582, #b712e080);
 }
 
 section {
@@ -641,7 +650,6 @@ footer {
 
 .footer-container h3 {
     color: #7c1eaffc;
-    text-shadow: 0 0 5px #b284d87d;
 }
 
 .icons {
