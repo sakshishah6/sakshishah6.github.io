@@ -375,7 +375,7 @@ a {
 header, footer {
     background: rgba(0, 0, 0, 0.18);
     border-bottom: 1px dashed;
-    border-image: linear-gradient(0.25turn, rgba(55, 55, 55, 0), #20c9b8, #7c1eaffc, #20c9b8, rgba(55, 55, 55, 0));
+    border-image: linear-gradient(0.25turn, rgba(55, 55, 55, 0), #7c1eaffc, #20c9b8, #7c1eaffc, rgba(55, 55, 55, 0));
     border-image-slice: 1;
     width:100%;
     cursor: url("/assets/icons/c1.png"), auto;
@@ -566,7 +566,7 @@ hr {
 #section-divider {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(55, 55, 55, 0), #5eaeaa7d, rgba(55, 55, 55, 0));
+    background-image: linear-gradient(to right, rgba(55, 55, 55, 0), #b712e03e, #0eebd544, rgba(55, 55, 55, 0));
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
