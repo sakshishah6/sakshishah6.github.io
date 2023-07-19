@@ -524,7 +524,7 @@ hr {
 }
 
 .active {
-    background: linear-gradient(45deg, #b712e0be, #0eebd5ba);
+    background: linear-gradient(45deg, #b712e09d, #0eebd59d);
 }
 
 .collapsible:hover {
