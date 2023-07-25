@@ -761,6 +761,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    cursor: url("/assets/icons/c1.png"), auto;
 }
 
 .footer-container h3 {
