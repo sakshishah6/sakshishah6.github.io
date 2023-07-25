@@ -261,6 +261,16 @@ ul li {
     list-style-image: url("../images/bullet.png");
 }
 
+.tech-stack-list {
+    color: white;
+    list-style-type: square;
+    margin-block-end: 0.25em;
+    margin-block-start: 0.25em;
+    display: list-item;
+    padding-inline-start: 0.5em;
+    margin-left: 1.5em;
+}
+
 blockquote {
     color: #aaa;
     padding-left: 10px;
