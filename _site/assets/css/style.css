@@ -580,7 +580,7 @@ hr {
     display: block;
 }
 
-.containers1, .containers2 {
+.containers1, .containers2, .containers3 {
     display: flex;
     flex-direction: column;
 }
@@ -627,7 +627,7 @@ hr {
     text-align: center;
 }
 
-.dots1, .dots2 {
+.dots1, .dots2, .dots3 {
     cursor: pointer;
     height: 8px;
     width: 8px;
@@ -640,7 +640,7 @@ hr {
     margin-top: 1rem;
 }
 
-.enable, .dots1:hover, .dots2:hover {
+.enable, .dots1:hover, .dots2:hover, .dots3:hover {
     background-color: #acc;
 }
 

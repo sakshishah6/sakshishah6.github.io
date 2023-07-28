@@ -322,6 +322,57 @@
                     </div>
 
                     <div id="projects-body">
+
+                        <button type="button" class="collapsible">E-Commerce Application</button>
+                        <div class="project">
+                            <div class="project-display">
+                                <div class="slideshow-container">
+                                    <div class="containers3">
+                                        <img src="/assets/images/projects/c1.png" style="width:100%">
+                                        <div class="slide-info">1/5</div>
+                                    </div>
+                                    <div class="containers3">
+                                        <img src="/assets/images/projects/c2.png" style="width:100%">
+                                        <div class="slide-info">2/5</div>
+                                    </div>
+                                    <div class="containers3">
+                                        <img src="/assets/images/projects/c3.png" style="width:100%">
+                                        <div class="slide-info">3/5</div>
+                                    </div>
+                                    <div class="containers3">
+                                        <img src="/assets/images/projects/c4.png" style="width:100%">
+                                        <div class="slide-info">4/5</div>
+                                    </div>
+                                    <div class="containers3">
+                                        <img src="/assets/images/projects/c5.png" style="width:100%">
+                                        <div class="slide-info">5/5</div>
+                                    </div>
+                                    <a class="back" onclick="plusSlides3(-1)">&#10094;</a>
+                                    <a class="forward" onclick="plusSlides3(1)">&#10095;</a>
+                                </div>
+                                <div style="text-align:center">
+                                    <span class="dots3" onclick="currentSlide3(1)"></span>
+                                    <span class="dots3" onclick="currentSlide3(2)"></span>
+                                    <span class="dots3" onclick="currentSlide3(3)"></span>
+                                    <span class="dots3" onclick="currentSlide3(4)"></span>
+                                    <span class="dots3" onclick="currentSlide3(5)"></span>
+                                </div> 
+                            </div>
+                            <div class="project-description">
+                                <p class="desc">An e-commerce application through which customers can browse and order products from.</p>
+                                <br>
+                                <p class="tools">Technology Stack: </p>
+                                <ul class="tech-stack-list">Javascript</ul>
+                                <ul class="tech-stack-list">React.js</ul>
+                                <ul class="tech-stack-list">Bootstrap</ul>
+                                <ul class="tech-stack-list">PHP</ul>
+                                <ul class="tech-stack-list">MySQL</ul>
+                                <br>
+                                <p class="repo"><a href="https://github.com/sakshishah6/e-commerce-app"
+                                        target="blank">Github Repo</a></p>
+                            </div>
+                        </div>
+
                         <button type="button" class="collapsible">Employee Logging System</button>
                         <div class="project">
                             <div class="project-display">
@@ -454,9 +505,11 @@
                 <script>
                     var slidePosition1 = 1;
                     var slidePosition2 = 1;
+                    var slidePosition3 = 1;
                     
                     SlideShow1(slidePosition1);
                     SlideShow2(slidePosition2);
+                    SlideShow3(slidePosition3);
 
                     function plusSlides1(n) {
                         SlideShow1(slidePosition1 += n);
@@ -464,12 +517,18 @@
                     function plusSlides2(n) {
                         SlideShow2(slidePosition2 += n);
                     }
+                    function plusSlides3(n) {
+                        SlideShow3(slidePosition3 += n);
+                    }
 
                     function currentSlide1(n) {
                         SlideShow1(slidePosition1 = n);
                     }
                     function currentSlide2(n) {
                         SlideShow2(slidePosition2 = n);
+                    }
+                    function currentSlide(n) {
+                        SlideShow3(slidePosition3 = n);
                     }
 
                     function SlideShow1(n) {
@@ -502,6 +561,22 @@
                         }
                         slides[slidePosition2-1].style.display = "block";
                         circles[slidePosition2-1].className += " enable";
+                    }
+
+                    function SlideShow3(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("containers3");
+                        var circles = document.getElementsByClassName("dots3");
+                        if (n > slides.length) {slidePosition3 = 1}
+                        if (n < 1) {slidePosition3 = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < circles.length; i++) {
+                            circles[i].className = circles[i].className.replace(" enable", "");
+                        }
+                        slides[slidePosition3-1].style.display = "block";
+                        circles[slidePosition3-1].className += " enable";
                     }
 
                 </script>
