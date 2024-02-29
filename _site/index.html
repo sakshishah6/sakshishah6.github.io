@@ -56,8 +56,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-        $(document).mousemove(function(e){
-            $('.pointer').css({left:e.pageX, top:e.pageY});
+        $(document).mousemove(function (e) {
+            $('.pointer').css({ left: e.pageX, top: e.pageY });
         })
     </script>
     <header>
@@ -81,6 +81,7 @@
 
     <div class="container">
         <section id="main_content">
+
             <body>
 
                 <br><br>
@@ -356,10 +357,11 @@
                                     <span class="dots3" onclick="currentSlide3(3)"></span>
                                     <span class="dots3" onclick="currentSlide3(4)"></span>
                                     <span class="dots3" onclick="currentSlide3(5)"></span>
-                                </div> 
+                                </div>
                             </div>
                             <div class="project-description">
-                                <p class="desc">An e-commerce application through which customers can browse and order products from.</p>
+                                <p class="desc">An e-commerce application through which customers can browse and order
+                                    products from.</p>
                                 <br>
                                 <p class="tools">Technology Stack: </p>
                                 <ul class="tech-stack-list">Javascript</ul>
@@ -396,7 +398,7 @@
                                     <span class="dots1" onclick="currentSlide1(1)"></span>
                                     <span class="dots1" onclick="currentSlide1(2)"></span>
                                     <span class="dots1" onclick="currentSlide1(3)"></span>
-                                </div> 
+                                </div>
                             </div>
                             <div class="project-description">
                                 <p class="desc">An application where employees and their managers can keep track of the
@@ -437,7 +439,7 @@
                                     <span class="dots2" onclick="currentSlide2(1)"></span>
                                     <span class="dots2" onclick="currentSlide2(2)"></span>
                                     <span class="dots2" onclick="currentSlide2(3)"></span>
-                                </div> 
+                                </div>
                             </div>
                             <div class="project-description">
                                 <p class="desc">A utility app that serves as a calendar, schedule builder, and
@@ -506,7 +508,7 @@
                     var slidePosition1 = 1;
                     var slidePosition2 = 1;
                     var slidePosition3 = 1;
-                    
+
                     SlideShow1(slidePosition1);
                     SlideShow2(slidePosition2);
                     SlideShow3(slidePosition3);
@@ -535,48 +537,48 @@
                         var i;
                         var slides = document.getElementsByClassName("containers1");
                         var circles = document.getElementsByClassName("dots1");
-                        if (n > slides.length) {slidePosition1 = 1}
-                        if (n < 1) {slidePosition1 = slides.length}
+                        if (n > slides.length) { slidePosition1 = 1 }
+                        if (n < 1) { slidePosition1 = slides.length }
                         for (i = 0; i < slides.length; i++) {
                             slides[i].style.display = "none";
                         }
                         for (i = 0; i < circles.length; i++) {
                             circles[i].className = circles[i].className.replace(" enable", "");
                         }
-                        slides[slidePosition1-1].style.display = "block";
-                        circles[slidePosition1-1].className += " enable";
+                        slides[slidePosition1 - 1].style.display = "block";
+                        circles[slidePosition1 - 1].className += " enable";
                     }
 
                     function SlideShow2(n) {
                         var i;
                         var slides = document.getElementsByClassName("containers2");
                         var circles = document.getElementsByClassName("dots2");
-                        if (n > slides.length) {slidePosition2 = 1}
-                        if (n < 1) {slidePosition2 = slides.length}
+                        if (n > slides.length) { slidePosition2 = 1 }
+                        if (n < 1) { slidePosition2 = slides.length }
                         for (i = 0; i < slides.length; i++) {
                             slides[i].style.display = "none";
                         }
                         for (i = 0; i < circles.length; i++) {
                             circles[i].className = circles[i].className.replace(" enable", "");
                         }
-                        slides[slidePosition2-1].style.display = "block";
-                        circles[slidePosition2-1].className += " enable";
+                        slides[slidePosition2 - 1].style.display = "block";
+                        circles[slidePosition2 - 1].className += " enable";
                     }
 
                     function SlideShow3(n) {
                         var i;
                         var slides = document.getElementsByClassName("containers3");
                         var circles = document.getElementsByClassName("dots3");
-                        if (n > slides.length) {slidePosition3 = 1}
-                        if (n < 1) {slidePosition3 = slides.length}
+                        if (n > slides.length) { slidePosition3 = 1 }
+                        if (n < 1) { slidePosition3 = slides.length }
                         for (i = 0; i < slides.length; i++) {
                             slides[i].style.display = "none";
                         }
                         for (i = 0; i < circles.length; i++) {
                             circles[i].className = circles[i].className.replace(" enable", "");
                         }
-                        slides[slidePosition3-1].style.display = "block";
-                        circles[slidePosition3-1].className += " enable";
+                        slides[slidePosition3 - 1].style.display = "block";
+                        circles[slidePosition3 - 1].className += " enable";
                     }
 
                 </script>
@@ -622,6 +624,19 @@
                                     target="_blank">linkedin.com/in/sakshishah6</a>
                             </div>
                         </div>
+                        <script>
+                            document.querySelectorAll('.flip-card').forEach(card => {
+                                card.addEventListener('mouseover', function () {
+                                    this.style.cursor = "url('/assets/icons/c1.png'), auto";
+                                });
+                                card.addEventListener('mouseout', function () {
+                                    this.style.cursor = "auto";
+                                });
+                                card.addEventListener('click', function () {
+                                    this.classList.toggle('is-flipped');
+                                });
+                            })
+                        </script>
                     </div>
                 </div>
             </body>
