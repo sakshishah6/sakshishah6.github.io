@@ -1,558 +1,741 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sakshi Shah is a Software & Systems Developer focused on building reliable systems, developer tooling, and data-driven applications." />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Sakshi Shah | Software & Systems Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="#top" aria-label="Sakshi Shah home">Sakshi Shah</a>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-    <!-- Setup theme-color -->
-    <!-- start theme color meta headers -->
-    <meta name="theme-color" content="#151515">
-    <meta name="msapplication-navbutton-color" content="#151515">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- end theme color meta headers -->
-
-
-    <!-- Setup Google Analytics -->
-
-
-
-    <!-- You can set your favicon here -->
-    <!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-    <!-- end custom head snippets -->
-
-
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>Sakshi Shah</title>
-    <meta name="generator" content="Jekyll v3.9.3" />
-    <meta property="og:title" content="Sakshi Shah" />
-    <meta name="author" content="Sakshi Shah" />
-    <meta property="og:locale" content="en_US" />
-    <link rel="canonical" href="http://localhost:4000/" />
-    <meta property="og:url" content="http://localhost:4000/" />
-    <meta property="og:site_name" content="Sakshi Shah" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Sakshi Shah" />
-    <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Sakshi Shah"},"headline":"Sakshi Shah","name":"Sakshi Shah","url":"http://localhost:4000/"}</script>
-    <!-- End Jekyll SEO tag -->
-
-</head>
-
-<body>
-
-    <div class="trail">
-        <div class="pointer pointer1"></div>
-        <div class="pointer pointer2"></div>
-        <div class="pointer pointer3"></div>
-        <div class="pointer pointer4"></div>
-        <div class="pointer pointer5"></div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-        $(document).mousemove(function (e) {
-            $('.pointer').css({ left: e.pageX, top: e.pageY });
-        })
-    </script>
-    <header>
-        <div class="container">
-            <div class="header">
-                <h1>Sakshi Shah</h1>
-                <h2 id="description"><strong>Hello World...Welcome to my Portfolio!</strong></h2>
-                <!-- <h2></h2> -->
-            </div>
-
-            <div class="nav">
-                <nav>
-                    <a href="#skills">Skills</a> |    
-                    <a href="#projects">Projects</a> |
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#credentials">Credentials</a>
+            <a href="#contact">Contact</a>
+            <a class="cta-link" href="/resume.html" target="_blank" rel="noreferrer">Résumé</a>
+          </nav>
         </div>
-    </header>
+      </header>
 
-    <div class="container">
-        <section id="main_content">
+      <main id="top">
+        <section class="hero section-surface">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Software & Systems Developer</p>
+              <h1>
+                Building reliable systems,
+                <span class="gradient-text">clean experiences</span>,
+                and practical solutions.
+              </h1>
+              <p class="lead">
+                I design and deliver production software with a focus on maintainability,
+                data-driven decision making, and enterprise systems that support real business needs.
+              </p>
 
-            <body>
+              <div class="cta-row">
+                <a class="button primary" href="#projects">View projects</a>
+                <a class="button secondary" href="/resume.html" target="_blank" rel="noreferrer">View résumé</a>
+              </div>
 
-                <br><br>
+              <ul class="mini-stats" aria-label="Professional highlights">
+                <li><strong>3</strong><span>Roles</span></li>
+                <li><strong>5</strong><span>Core projects</span></li>
+                <li><strong>2</strong><span>Certifications</span></li>
+              </ul>
+            </div>
 
-                <div id="skills">
-                    <div id="skills-heading">
-                        <img src="/assets/icons/skills-icon.png" class="heading-icons">
-                        <h2 class="skills">Skills</h2>
-                    </div>
-                    <div id="skills-body">
-                        <ul id="skills-icons">
-                            <li class="icons">
-                                <img src="assets/skills/javascript.svg" width="70" height="70">
-                                <span class="text-center">JavaScript</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/jquery.svg" width="70" height="70">
-                                <span class="text-center">jQuery</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/react.svg" width="70" height="70">
-                                <span class="text-center">React.js</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/node.svg" width="70" height="70">
-                                <span class="text-center">Node.js</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/html.svg" width="70" height="70">
-                                <span class="text-center">HTML</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/css.svg" width="70" height="70">
-                                <span class="text-center">CSS</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/bootstrap.svg" width="70" height="70">
-                                <span class="text-center">Bootstrap</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/python.svg" width="70" height="70">
-                                <span class="text-center">Python</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/json.svg" width="70" height="70">
-                                <span class="text-center">JSON</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/php.svg" width="70" height="70">
-                                <span class="text-center">PHP</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/git.svg" width="70" height="70">
-                                <span class="text-center">Git</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/java.svg" width="70" height="70">
-                                <span class="text-center">Java</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/linux.svg" width="70" height="70">
-                                <span class="text-center">Linux OS</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/windows.svg" width="70" height="70">
-                                <span class="text-center">WindowsOS</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/mysql.svg" width="70" height="70">
-                                <span class="text-center">MySQL</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/sqlserver.svg" width="70" height="70">
-                                <span class="text-center">Microsoft SQL Server</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/shopify.svg" width="70" height="70">
-                                <span class="text-center">Shopify</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/office.svg" width="70" height="70">
-                                <span class="text-center">Microsoft Office</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/vscode.svg" width="70" height="70">
-                                <span class="text-center">VSCode</span>
-                            </li>
-
-                            <li class="icons">
-                                <img src="assets/skills/aws.svg" width="70" height="70">
-                                <span class="text-center">AWS</span>
-                            </li>
-                            
-                            <li class="icons">
-                                <img src="assets/skills/docker.svg" width="70" height="70">
-                                <span class="text-center">Docker</span>
-                            </li>
-                            
-                            <li class="icons">
-                                <img src="assets/skills/figma.svg" width="70" height="70">
-                                <span class="text-center">Figma</span>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <hr id="section-divider">
-
-                <div id="projects">
-                    <div id="projects-heading">
-                        <img src="/assets/icons/project-icon.png" class="heading-icons">
-                        <h2 class="projects">Projects</h2>
-                    </div>
-
-                    <div id="projects-body">
-
-                        <button type="button" class="collapsible">E-Commerce Application</button>
-                        <div class="project">
-                            <div class="project-display">
-                                <div class="slideshow-container">
-                                    <div class="containers3">
-                                        <img src="/assets/projects/c1.png" style="width:100%">
-                                        <div class="slide-info">1/5</div>
-                                    </div>
-                                    <div class="containers3">
-                                        <img src="/assets/projects/c2.png" style="width:100%">
-                                        <div class="slide-info">2/5</div>
-                                    </div>
-                                    <div class="containers3">
-                                        <img src="/assets/projects/c3.png" style="width:100%">
-                                        <div class="slide-info">3/5</div>
-                                    </div>
-                                    <div class="containers3">
-                                        <img src="/assets/projects/c4.png" style="width:100%">
-                                        <div class="slide-info">4/5</div>
-                                    </div>
-                                    <div class="containers3">
-                                        <img src="/assets/projects/c5.png" style="width:100%">
-                                        <div class="slide-info">5/5</div>
-                                    </div>
-                                    <a class="back" onclick="plusSlides3(-1)">&#10094;</a>
-                                    <a class="forward" onclick="plusSlides3(1)">&#10095;</a>
-                                </div>
-                                <div style="text-align:center">
-                                    <span class="dots3" onclick="currentSlide3(1)"></span>
-                                    <span class="dots3" onclick="currentSlide3(2)"></span>
-                                    <span class="dots3" onclick="currentSlide3(3)"></span>
-                                    <span class="dots3" onclick="currentSlide3(4)"></span>
-                                    <span class="dots3" onclick="currentSlide3(5)"></span>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                <p class="desc">An e-commerce application through which customers can browse and order
-                                    products from.</p>
-                                <br>
-                                <p class="tools">Technology Stack: </p>
-                                <ul class="tech-stack-list">Javascript</ul>
-                                <ul class="tech-stack-list">React.js</ul>
-                                <ul class="tech-stack-list">Bootstrap</ul>
-                                <ul class="tech-stack-list">PHP</ul>
-                                <ul class="tech-stack-list">MySQL</ul>
-                                <br>
-                                <p class="repo"><a href="https://github.com/sakshishah6/e-commerce-app"
-                                        target="blank">Github Repo</a></p>
-                            </div>
-                        </div>
-
-                        <button type="button" class="collapsible">Employee Logging System</button>
-                        <div class="project">
-                            <div class="project-display">
-                                <div class="slideshow-container">
-                                    <div class="containers1">
-                                        <img src="/assets/projects/e1.png" style="width:100%">
-                                        <div class="slide-info">1/3</div>
-                                    </div>
-                                    <div class="containers1">
-                                        <img src="/assets/projects/e2.png" style="width:100%">
-                                        <div class="slide-info">2/3</div>
-                                    </div>
-                                    <div class="containers1">
-                                        <img src="/assets/projects/e3.png" style="width:100%">
-                                        <div class="slide-info">3/3</div>
-                                    </div>
-                                    <a class="back" onclick="plusSlides1(-1)">&#10094;</a>
-                                    <a class="forward" onclick="plusSlides1(1)">&#10095;</a>
-                                </div>
-                                <div style="text-align:center">
-                                    <span class="dots1" onclick="currentSlide1(1)"></span>
-                                    <span class="dots1" onclick="currentSlide1(2)"></span>
-                                    <span class="dots1" onclick="currentSlide1(3)"></span>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                <p class="desc">An application where employees and their managers can keep track of the
-                                    amount of hours worked.</p>
-                                <br>
-                                <p class="tools">Technology Stack: </p>
-                                <ul class="tech-stack-list">Javascript</ul>
-                                <ul class="tech-stack-list">React.js</ul>
-                                <ul class="tech-stack-list">Node.js</ul>
-                                <ul class="tech-stack-list">Bootstrap</ul>
-                                <ul class="tech-stack-list">MySQL</ul>
-                                <br>
-                                <p class="repo"><a href="https://github.com/sakshishah6/employee-logging-system"
-                                        target="blank">Github Repo</a></p>
-                            </div>
-                        </div>
-
-                        <button type="button" class="collapsible">Utility App</button>
-                        <div class="project">
-                            <div class="project-display">
-                                <div class="slideshow-container">
-                                    <div class="containers2">
-                                        <img src="/assets/projects/u1.png" style="height:100%">
-                                        <div class="slide-info">1/3</div>
-                                    </div>
-                                    <div class="containers2">
-                                        <img src="/assets/projects/u2.png" style="height:100%">
-                                        <div class="slide-info">2/3</div>
-                                    </div>
-                                    <div class="containers2">
-                                        <img src="/assets/projects/u3.png" style="height:100%">
-                                        <div class="slide-info">3/3</div>
-                                    </div>
-                                    <a class="back" onclick="plusSlides2(-1)">&#10094;</a>
-                                    <a class="forward" onclick="plusSlides2(1)">&#10095;</a>
-                                </div>
-                                <div style="text-align:center">
-                                    <span class="dots2" onclick="currentSlide2(1)"></span>
-                                    <span class="dots2" onclick="currentSlide2(2)"></span>
-                                    <span class="dots2" onclick="currentSlide2(3)"></span>
-                                </div>
-                            </div>
-                            <div class="project-description">
-                                <p class="desc">A utility app that serves as a calendar, schedule builder, and
-                                    timer/stopwatch system.</p>
-                                <br>
-                                <p class="tools">Technology Stack: </p>
-                                <ul class="tech-stack-list">Java</ul>
-                                <ul class="tech-stack-list">Swing GUI</ul>
-                                <br>
-                                <p class="repo"><a href="https://github.com/sakshishah6/java-utility-app"
-                                        target="blank">Github Repo</a></p>
-                            </div>
-                        </div>
-
-                        <button type="button" class="collapsible">Automated Poker Game</button>
-                        <div class="project">
-                            <!-- <div class="project-display"></div> -->
-                            <div class="project-description" style="width:100%">
-                                <p class="desc">An automated game of Poker that will always return the winning hand.</p>
-                                <br>
-                                <p class="tools">Technology Stack: </p>
-                                <ul class="tech-stack-list">Elixir</ul>
-                                <br>
-                                <p class="repo"><a href="https://github.com/sakshishah6/elixir-poker"
-                                        target="blank">Github Repo</a></p>
-                            </div>
-                        </div>
-
-                        <button type="button" class="collapsible">Retail Database Management System</button>
-                        <div class="project">
-                            <!-- <div class="project-display"></div> -->
-                            <div class="project-description" style="width:100%">
-                                <p class="desc">A retail database system that allows users to store and manage all the
-                                    info related to a retail business.</p>
-                                <br>
-                                <p class="tools">Technology Stack: </p>
-                                <ul class="tech-stack-list">Java</ul>
-                                <ul class="tech-stack-list">Oracle SQL Database</ul>
-                                <br>
-                                <p class="repo"><a href="https://github.com/sakshishah6/retail-dbms"
-                                        target="blank">Github Repo</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <script>
-                        var coll = document.getElementsByClassName("collapsible");
-                        var i;
-
-                        for (i = 0; i < coll.length; i++) {
-                            coll[i].addEventListener("click", function () {
-                                this.classList.toggle("active");
-                                var content = this.nextElementSibling;
-                                if (content.style.maxHeight) {
-                                    content.style.maxHeight = null;
-                                } else {
-                                    content.style.maxHeight = content.scrollHeight + "px";
-                                }
-                            });
-                        }
-                    </script>
-                </div>
-
-                <script>
-                    var slidePosition1 = 1;
-                    var slidePosition2 = 1;
-                    var slidePosition3 = 1;
-
-                    SlideShow1(slidePosition1);
-                    SlideShow2(slidePosition2);
-                    SlideShow3(slidePosition3);
-
-                    function plusSlides1(n) {
-                        SlideShow1(slidePosition1 += n);
-                    }
-                    function plusSlides2(n) {
-                        SlideShow2(slidePosition2 += n);
-                    }
-                    function plusSlides3(n) {
-                        SlideShow3(slidePosition3 += n);
-                    }
-
-                    function currentSlide1(n) {
-                        SlideShow1(slidePosition1 = n);
-                    }
-                    function currentSlide2(n) {
-                        SlideShow2(slidePosition2 = n);
-                    }
-                    function currentSlide3(n) {
-                        SlideShow3(slidePosition3 = n);
-                    }
-
-                    function SlideShow1(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("containers1");
-                        var circles = document.getElementsByClassName("dots1");
-                        if (n > slides.length) { slidePosition1 = 1 }
-                        if (n < 1) { slidePosition1 = slides.length }
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < circles.length; i++) {
-                            circles[i].className = circles[i].className.replace(" enable", "");
-                        }
-                        slides[slidePosition1 - 1].style.display = "block";
-                        circles[slidePosition1 - 1].className += " enable";
-                    }
-
-                    function SlideShow2(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("containers2");
-                        var circles = document.getElementsByClassName("dots2");
-                        if (n > slides.length) { slidePosition2 = 1 }
-                        if (n < 1) { slidePosition2 = slides.length }
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < circles.length; i++) {
-                            circles[i].className = circles[i].className.replace(" enable", "");
-                        }
-                        slides[slidePosition2 - 1].style.display = "block";
-                        circles[slidePosition2 - 1].className += " enable";
-                    }
-
-                    function SlideShow3(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("containers3");
-                        var circles = document.getElementsByClassName("dots3");
-                        if (n > slides.length) { slidePosition3 = 1 }
-                        if (n < 1) { slidePosition3 = slides.length }
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < circles.length; i++) {
-                            circles[i].className = circles[i].className.replace(" enable", "");
-                        }
-                        slides[slidePosition3 - 1].style.display = "block";
-                        circles[slidePosition3 - 1].className += " enable";
-                    }
-
-                </script>
-
-                <hr id="section-divider">
-
-                <div id="contact">
-                    <div id="contact-heading">
-                        <img src="/assets/icons/contact-icon.png" class="heading-icons">
-                        <h2 class="contact">Contact</h2>
-                    </div>
-
-                    <div id="contact-body">
-                        <div class="flip-card">
-                            <div class="card-container-front">
-                                <img src="/assets/icons/email.png" class="contact-icons">
-                                <h3 class="h3-padless">Email</h3>
-                            </div>
-                            <div class="card-container-back">
-                                <img src="/assets/icons/email.png" class="contact-icons">
-                                <a href="mailto:someone@example.com" class="h3-padless">shahsakshi0206@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="flip-card">
-                            <div class="card-container-front">
-                                <img src="/assets/icons/github.png" class="contact-icons">
-                                <h3 class="h3-padless">GitHub</h3>
-                            </div>
-                            <div class="card-container-back">
-                                <img src="/assets/icons/github.png" class="contact-icons">
-                                <a href="https://github.com/sakshishah6" class="h3-padless"
-                                    target="_blank">github.com/sakshishah6</a>
-                            </div>
-                        </div>
-                        <div class="flip-card">
-                            <div class="card-container-front">
-                                <img src="/assets/icons/linkedin.png" class="contact-icons">
-                                <h3 class="h3-padless">LinkedIn</h3>
-                            </div>
-                            <div class="card-container-back">
-                                <img src="/assets/icons/linkedin.png" class="contact-icons">
-                                <a href="https://www.linkedin.com/in/sakshishah6" class="h3-padless"
-                                    target="_blank">linkedin.com/in/sakshishah6</a>
-                            </div>
-                        </div>
-                        <script>
-                            document.querySelectorAll('.flip-card').forEach(card => {
-                                card.addEventListener('mouseover', function () {
-                                    this.style.cursor = "url('/assets/icons/c1.png'), auto";
-                                });
-                                card.addEventListener('mouseout', function () {
-                                    this.style.cursor = "auto";
-                                });
-                                card.addEventListener('click', function () {
-                                    this.classList.toggle('is-flipped');
-                                });
-                            })
-                        </script>
-                    </div>
-                </div>
-            </body>
+            <div class="hero-panel reveal" aria-label="Professional summary panel">
+              <div class="panel-badge">Current focus</div>
+              <div class="panel-stack">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>SQL</span>
+                <span>AWS</span>
+              </div>
+              <div class="profile-summary">
+                <h2>Professional profile</h2>
+                <p>
+                  Software and systems developer with experience in enterprise applications,
+                  business intelligence, and developer-facing solutions across public sector and private sector environments.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
-    </div>
-</body>
 
-<footer>
-    <div class="footer-container">
-        <h3>Sakshi Shah</h3>
-        <div id="top-btn-div">
-            <button onclick="goToTop()" id="topBtn">
-                <img src="/assets/icons/arrow.png" width="25px" height="25px">
-            </button>
-            <script>
-                let topBtn = document.getElementById("topBtn");
-                function goToTop() {
-                    document.documentElement.scrollTop = 0;
-                }
-            </script>
+        <section id="about" class="section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">About</p>
+              <h2>Developer with a systems mindset.</h2>
+            </div>
+
+            <div class="about-grid reveal">
+              <div class="about-copy">
+                <p>
+                  I’m a Software & Systems Developer with hands-on experience building software for business and operational environments.
+                  My work spans application development, system integration, reporting workflows, and data-driven problem solving.
+                </p>
+                <p>
+                  I’ve worked with enterprise systems, modern JavaScript stacks, .NET and Java-based solutions, SQL and reporting platforms,
+                  and cloud tooling, with a focus on maintainability and practical delivery.
+                </p>
+              </div>
+              <div class="about-aside">
+                <div class="info-card">
+                  <span class="label">Education</span>
+                  <strong>BSc in Computer Science</strong>
+                  <small>Toronto Metropolitan University</small>
+                </div>
+                <div class="info-card">
+                  <span class="label">Certifications</span>
+                  <strong>AWS Cloud Practitioner</strong>
+                  <strong>PMP</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="section section-alt">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Experience</p>
+              <h2>Career timeline</h2>
+            </div>
+
+            <div class="timeline reveal" aria-label="Professional experience timeline">
+              <article class="timeline-item is-active">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <p class="meta">March 2024 – Present</p>
+                  <h3>Systems Developer</h3>
+                  <h4>DCL Technology Group</h4>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <p class="meta">2022</p>
+                  <h3>Software Developer</h3>
+                  <h4>Rebelstork</h4>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <p class="meta">2020</p>
+                  <h3>Business Intelligence Developer</h3>
+                  <h4>Canada Revenue Agency</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Projects</p>
+              <h2>Selected work</h2>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card reveal">
+                <div class="project-media media-ecommerce">
+                  <img src="/assets/projects/c1.png" alt="E-Commerce application interface preview" />
+                </div>
+                <div class="project-body">
+                  <div class="project-topline">
+                    <span class="project-type">Full-stack web app</span>
+                    <a href="https://github.com/sakshishah6/e-commerce-app" target="_blank" rel="noreferrer">GitHub ↗</a>
+                  </div>
+                  <h3>E-Commerce Application</h3>
+                  <p>An e-commerce application through which customers can browse and order products from.</p>
+                  <ul class="tag-list">
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <div class="project-media media-employee">
+                  <img src="/assets/projects/e1.png" alt="Employee logging system interface preview" />
+                </div>
+                <div class="project-body">
+                  <div class="project-topline">
+                    <span class="project-type">Workforce application</span>
+                    <a href="https://github.com/sakshishah6/employee-logging-system" target="_blank" rel="noreferrer">GitHub ↗</a>
+                  </div>
+                  <h3>Employee Logging System</h3>
+                  <p>An application where employees and their managers can keep track of the amount of hours worked.</p>
+                  <ul class="tag-list">
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Bootstrap</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <div class="project-media media-utility">
+                  <img src="/assets/projects/u1.png" alt="Utility app interface preview" />
+                </div>
+                <div class="project-body">
+                  <div class="project-topline">
+                    <span class="project-type">Desktop utility</span>
+                    <a href="https://github.com/sakshishah6/java-utility-app" target="_blank" rel="noreferrer">GitHub ↗</a>
+                  </div>
+                  <h3>Utility App</h3>
+                  <p>A utility app that serves as a calendar, schedule builder, and timer/stopwatch system.</p>
+                  <ul class="tag-list">
+                    <li>Java</li>
+                    <li>Swing GUI</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <div class="project-media empty-media">
+                  <span>Project highlight</span>
+                </div>
+                <div class="project-body">
+                  <div class="project-topline">
+                    <span class="project-type">Algorithm project</span>
+                    <a href="https://github.com/sakshishah6/elixir-poker" target="_blank" rel="noreferrer">GitHub ↗</a>
+                  </div>
+                  <h3>Automated Poker Game</h3>
+                  <p>An automated game of Poker that will always return the winning hand.</p>
+                  <ul class="tag-list">
+                    <li>Elixir</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <div class="project-media empty-media">
+                  <span>Database system</span>
+                </div>
+                <div class="project-body">
+                  <div class="project-topline">
+                    <span class="project-type">Database design</span>
+                    <a href="https://github.com/sakshishah6/retail-dbms" target="_blank" rel="noreferrer">GitHub ↗</a>
+                  </div>
+                  <h3>Retail Database Management System</h3>
+                  <p>A retail database system that allows users to store and manage all the info related to a retail business.</p>
+                  <ul class="tag-list">
+                    <li>Java</li>
+                    <li>Oracle SQL</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Skills</p>
+              <h2>Core technical capabilities</h2>
+            </div>
+
+            <div class="skill-grid reveal">
+              <article class="skill-card">
+                <h3>Languages</h3>
+                <ul>
+                  <li>C#</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>SQL</li>
+                </ul>
+              </article>
+
+              <article class="skill-card">
+                <h3>Web & app development</h3>
+                <ul>
+                  <li>.NET</li>
+                  <li>Node.js</li>
+                  <li>React</li>
+                  <li>REST APIs</li>
+                  <li>HTML / CSS</li>
+                </ul>
+              </article>
+
+              <article class="skill-card">
+                <h3>Data & BI</h3>
+                <ul>
+                  <li>SQL Server</li>
+                  <li>MySQL</li>
+                  <li>Power BI</li>
+                  <li>ERP systems</li>
+                  <li>Business intelligence</li>
+                </ul>
+              </article>
+
+              <article class="skill-card">
+                <h3>Cloud & tooling</h3>
+                <ul>
+                  <li>AWS</li>
+                  <li>Docker</li>
+                  <li>Git</li>
+                  <li>CI/CD</li>
+                  <li>DevOps workflows</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="credentials" class="section">
+          <div class="container credentials-grid">
+            <div class="credential-card reveal">
+              <p class="eyebrow">Education</p>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p>Toronto Metropolitan University</p>
+            </div>
+
+            <div class="credential-card reveal">
+              <p class="eyebrow">Certifications</p>
+              <h3>AWS Cloud Practitioner</h3>
+              <h3>PMP</h3>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h3>Let’s build something valuable.</h3>
+          </div>
+
+          <div class="contact-list" aria-label="Contact links">
+            <a href="mailto:sakshishah6@outlook.com">sakshishah6@outlook.com</a>
+            <a href="mailto:shahsakshi0206@gmail.com">shahsakshi0206@gmail.com</a>
+            <a href="https://github.com/sakshishah6" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/sakshishah6/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
         </div>
-        <h3>© 2023</h3>
-    </div>
-</footer>
 
+        <div class="footer-bottom">
+          <div class="container footer-meta">
+            <span>© <span id="year"></span> Sakshi Shah</span>
+            <a href="/resume.html" target="_blank" rel="noreferrer">Résumé</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/assets/js/portfolio.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
